@@ -25,12 +25,16 @@ for(var i = 0; i < pacientes.length; i++){
         pesoValido = false;
         alert('Verificar peso, peso inserido é invalido');
         tdImc.textContent = "Peso Invalido";
+        //style
+        paciente.classList.add("campo-invalido");
     }
 
     if(altura <= 0 || altura >= 3){
         alturaValida = false;
         alert('Verificar altura, altura inserida é invalida');
         tdImc.textContent = "Altura Invalida";
+        //style
+        paciente.classList.add("campo-invalido");
     }
 
     if(pesoValido && alturaValida){
