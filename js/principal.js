@@ -37,7 +37,7 @@ for(var i = 0; i < pacientes.length; i++){
         //fazer o caluclo IMC
         var imc = peso / (altura * altura);
         //substituir value do imc = 0 por imc calculado
-        tdImc.textContent = imc;
+        tdImc.textContent = imc.toFixed(2);
     }
 
 }
