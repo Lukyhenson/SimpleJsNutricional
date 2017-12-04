@@ -45,3 +45,20 @@ for(var i = 0; i < pacientes.length; i++){
     }
 
 }
+
+//Cadastrar novo paciente
+var botaoAdicionarPaciente = document.querySelector('#adicionar-paciente');
+
+botaoAdicionarPaciente.addEventListener('click', function(event){
+
+  event.preventDefault();
+
+  //acessar o form
+  var form =  document.querySelector('#form-adiciona');
+
+  console.log(form.nome.value);
+  console.log(form.peso.value);
+  console.log(form.altura.value);
+  console.log(form.gordura.value);
+
+});
